@@ -1,0 +1,242 @@
+.work-banner {
+    background-image: url(../images/bg-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    padding: 100px 0 20px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.work-banner-l {
+    padding-left: 40px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+}
+
+.work-banner-l > p {
+    margin-top: 20px;
+    letter-spacing: 0.4px;
+}
+
+.work-core {
+    background-color: #F6F6FF;
+    padding: 50px 20px;
+}
+
+.work-core-text {
+    color: #666;
+    padding-bottom: 40px;
+}
+
+.work-core .swiper-slide {
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 24px;
+}
+
+.text-core > p {
+    color: #666;
+    margin-top: 15px;
+}
+
+.work-apply {
+    background-color: #F8FDFF;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.work-apply .heading-line {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.work-apply .heading-line::after,
+.work-apply .heading-line::before {
+    background-color: #000;
+}
+
+.wrapper-apply {
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 25px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.wrapper-apply.open .btn-open {
+    background-color: #FF7A04;
+}
+
+.wrapper-apply.open .apply-detail {
+    display: block;
+}
+
+.apply-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apply-header > h3 {
+    color: #000;
+    font-weight: normal;
+    text-align: left;
+    font-weight: 600;
+}
+
+.btn-open {
+    position: relative;
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid #FF7A04;
+    background-color: #FFF;
+}
+
+.btn-open.open {
+    background-color: #FF7A04;
+}
+
+.apply-detail {
+    margin-top: 20px;
+    display: none;
+}
+
+.btn-open::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background-color: #FF7A04;
+    left: 50%;
+    margin-left: -8px;
+    top: 50%;
+    margin-top: -1px;
+}
+
+.btn-open::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 16px;
+    background-color: #FF7A04;
+    left: 50%;
+    margin-left: -1px;
+    top: 50%;
+    margin-top: -8px;
+}
+
+.wrapper-apply.open .btn-open::before {
+    background-color: #FFF;
+}
+
+.wrapper-apply.open .btn-open::after {
+    display: none;
+}
+
+.btn-apply {
+    background-color: #FF7A04;
+    color: #FFF;
+    border-radius: 8px;
+    padding: 0 30px;
+    font-weight: 600;
+    line-height: 50px;
+    display: inline-block;
+}
+
+.apply-detail h4 {
+    margin-bottom: 10px;
+}
+
+.apply-detail ul {
+    padding: 0;
+    list-style: disc;
+    color: #999;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.apply-detail ul > li {
+    margin-bottom: 10px;
+}
+
+.wrapper-btn-apply {
+    text-align: center;
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .work-banner {
+        background: unset;
+        color: #000;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .work-banner > div {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+
+    .work-banner:after {
+        content: "";
+        position: absolute;
+        background-image: url("../images/bg-banner-dt.png");
+        background-size: cover;
+        top: 0;
+        right: 0;
+        width: 850px;
+        height: 700px;
+    }
+
+    .work-page h1 {
+        color: #FF7A04;
+    }
+
+    .work-banner-r {
+        max-width: 500px;
+    }
+
+    .work-core .swiper-slide {
+        width: 700px !important;
+    }
+
+    .text-core {
+        display: flex;
+    }
+
+    .text-core > div,
+    .text-core > p {
+        width: 50%;
+    }
+
+    .text-core > div {
+        padding-right: 10px;
+    }
+
+    .text-core > p {
+        padding-left: 10px;
+    }
+
+    .work-core {
+        padding-bottom: 40px;
+    }
+
+    .work-apply > div {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .wrapper-apply  {
+        padding: 15px 20px;
+    }
+}

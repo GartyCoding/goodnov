@@ -1,0 +1,124 @@
+.team-banner {
+    background-image: url(../images/bg-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    padding: 100px 0 40px;
+}
+
+.team-page h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.team-banner-l {
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.team-banner-l > p {
+    margin-bottom: 20px;
+    letter-spacing: 0.4px;
+}
+
+.team-card {
+    padding: 36px 20px;
+}
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card:hover .card-datail {
+    opacity: 1;
+    transition: opacity 300ms ease;
+}
+
+.card-datail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FABC59;
+    padding: 36px 20px;
+    color: #000;
+    opacity: 0;
+}
+
+.team-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.team-position {
+    margin-top: 10px;
+}
+
+.team-desc {
+    margin-top: 50px;
+}
+
+.team-contact {
+    margin-top: 50px;
+}
+
+.link-team-contact {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-right: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+    .team-banner {
+        background: unset;
+        color: #000;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .team-banner > div {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+
+    .team-banner:after {
+        content: "";
+        position: absolute;
+        background-image: url("../images/bg-banner-dt.png");
+        background-size: cover;
+        top: 0;
+        right: 0;
+        width: 850px;
+        height: 700px;
+    }
+
+    .team-page h1 {
+        color: #FF7A04;
+    }
+
+    .team-banner-r {
+        max-width: 500px;
+    }
+
+    .team-card {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: calc(33% - 17px);
+        display: inline-block;
+        margin: 0 10px 20px;
+    }
+}

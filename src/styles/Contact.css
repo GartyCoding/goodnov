@@ -1,0 +1,142 @@
+.contact-banner {
+    background-image: url(../images/bg-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    padding: 100px 0 40px;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.contact-banner-l {
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.contact-banner-l > p {
+    margin-bottom: 20px;
+    letter-spacing: 0.4px;
+}
+
+.contact-banner-text {
+    margin-top: 20px;
+}
+
+.contact-banner-text > p {
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    border-bottom: 1px solid #FF7A04;
+    position: relative;
+    padding: 50px 20px;
+    display: block;
+    background-color: #FFF;
+    transition: background-color 300ms ease;
+}
+
+.contact-list:hover,
+.contact-list:hover p {
+    color: #FFF;
+}
+
+.contact-list:hover .contact-arrow {
+    transform: rotate(-30deg);
+}
+
+.contact-list.black:hover {
+    background-color: #000;
+}
+
+.contact-list.purple:hover {
+    background-color: #8651F6;
+}
+
+.contact-list.blue:hover {
+    background-color: #1877F2;
+}
+
+.contact-list.ig:hover {
+    background: linear-gradient(145deg, #7024c4 0%, #c21975 30%, #dd2a69 70%, #f99f36 100%);
+}
+
+.contact-list.yt:hover {
+    background-color: #c4302b;
+}
+
+.contact-list.tt:hover {
+    background: rgb(255,0,80);
+    background: linear-gradient(300deg, rgba(255,0,80,1) 4%, rgba(0,242,234,1) 16%, rgba(0,0,0,1) 31%);
+}
+
+.contact-list:hover .contact-arrow {
+    color: #FFF;
+}
+
+.contact-list p {
+    color: #000;
+}
+
+.contact-arrow {
+    color: #FF7A04;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: rotate(0);
+    transition: transform 300ms ease;
+}
+
+@media screen and (min-width: 1024px) {
+    .contact-banner {
+        background: unset;
+        color: #000;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .contact-banner > div {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+
+    .contact-banner:after {
+        content: "";
+        position: absolute;
+        background-image: url("../images/bg-banner-dt.png");
+        background-size: cover;
+        top: 0;
+        right: 0;
+        width: 850px;
+        height: 700px;
+    }
+
+    .contact-page h1 {
+        color: #FF7A04;
+    }
+
+    .contact-banner-r {
+        max-width: 500px;
+    }
+
+    .contact-list {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .ic-link {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .contact-list:nth-child(odd) {
+        border-right: 1px solid #FF7A04;
+    }
+}
+
